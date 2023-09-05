@@ -31,7 +31,7 @@ int main() {
     
     //获取文件数量
     int numFiles = pZip->GetNumsOfFile(); // 文件总数
-    int numThreads = 3; // 设定线程数
+    int numThreads = 3; //设定线程数
     if(numFiles <= 0){
         std::cerr << "get entry files failed:  file name is "<<  zipFilePath << std::endl;
         return 1;
