@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		78E68C302AA56B1400B976E6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78E68C2F2AA56B1400B976E6 /* main.cpp */; };
+		78E68C382AA56FA900B976E6 /* ZipWapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78E68C362AA56FA900B976E6 /* ZipWapper.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,10 @@
 /* Begin PBXFileReference section */
 		78E68C2C2AA56B1400B976E6 /* MutiThreadZiper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MutiThreadZiper; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E68C2F2AA56B1400B976E6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		78E68C362AA56FA900B976E6 /* ZipWapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ZipWapper.cpp; sourceTree = "<group>"; };
+		78E68C372AA56FA900B976E6 /* ZipWapper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ZipWapper.hpp; sourceTree = "<group>"; };
+		78E68D632AA6BB3700B976E6 /* IZip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IZip.h; sourceTree = "<group>"; };
+		78E68D642AA6BCD300B976E6 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +62,11 @@
 		78E68C2E2AA56B1400B976E6 /* MutiThreadZiper */ = {
 			isa = PBXGroup;
 			children = (
+				78E68C362AA56FA900B976E6 /* ZipWapper.cpp */,
+				78E68C372AA56FA900B976E6 /* ZipWapper.hpp */,
 				78E68C2F2AA56B1400B976E6 /* main.cpp */,
+				78E68D632AA6BB3700B976E6 /* IZip.h */,
+				78E68D642AA6BCD300B976E6 /* Util.h */,
 			);
 			path = MutiThreadZiper;
 			sourceTree = "<group>";
@@ -119,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78E68C382AA56FA900B976E6 /* ZipWapper.cpp in Sources */,
 				78E68C302AA56B1400B976E6 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
