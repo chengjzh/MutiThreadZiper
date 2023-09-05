@@ -16,9 +16,19 @@
 #include "Util.h"
 
 
-int main() {
-    std::string zipFilePath = "/Users/chengjzh/Documents/wme-ta-sst-master.zip";
-    std::string outputPath =  "/Users/chengjzh/Documents/wme";
+int main(int argc, const char * argv[]) {
+    
+    //1. check the paramter
+    //command line Usage
+    //argv[1] : zip 文件路径
+    //argv[2] : 解压后的本地目录
+    if (argc < 2) {
+        std::cerr << "Usage: " << argv[0] << " <zipfile> <output Path> " << std::endl;
+        return 1;
+    }
+    
+    std::string zipFilePath = argv[1];
+    std::string outputPath =  argv[2];
     
     std::shared_ptr<IZip> pZip(new ZipWapper(zipFilePath, outputPath));
     
